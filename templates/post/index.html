@@ -1,0 +1,18 @@
+{% extends 'include/homepage.html' %}
+
+{% block content %}
+<!-- {% include 'include/header.html' %} -->
+
+    
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <p>{{ jobs }}</p>
+    <ul>
+        {% for job in jobs %}
+    
+        <li>{{ job }}</li>
+        {% endfor %}
+
+    </ul>
+
+    {% endblock %}

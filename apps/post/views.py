@@ -10,6 +10,7 @@ def goodbye(request):
 
 def index(request):
     context = {
+        'page_name': "Главная страница",
         'title': "__ Главная страница ___",
         'description': "Описание",
         'jobs': ["Курьер", "Шеф-повар", "Строитель", "Админ"]
@@ -19,8 +20,16 @@ def index(request):
 
 def contact(request):
     context = {
+        'page_name': "Контакты",
         'title': "Это страница контакты",
         'phone': "0771244745",
         'instagram': "Username"
     }
     return render(request, 'contact.html', context)
+
+def test(request):
+    context = {
+        'page_name': "Тест",
+        'title': "test"
+    }
+    return render(request, 'test.html', context)

@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'include/homepage.html' %}
+
+{% block content %}
+<!-- {% include 'include/header.html' %} -->
      <h1>Заголовок</h1>
      <h2>Заголовок</h2>
      <h3>Заголовок</h3>
@@ -46,5 +42,4 @@
     <nav>навигации сайта</nav>
     <section>Разделы сайта</section>
 
-</body>
-</html>
+{% endblock %}
